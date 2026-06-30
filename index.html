@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PocketGPT</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: #f6f7f9;
+        color: #14171f;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        margin: 0;
+        display: grid;
+        place-items: center;
+        padding: 32px;
+      }
+
+      main {
+        width: min(100%, 720px);
+      }
+
+      h1 {
+        margin: 0 0 16px;
+        font-size: clamp(2.5rem, 7vw, 5rem);
+        line-height: 0.95;
+        letter-spacing: 0;
+      }
+
+      p {
+        max-width: 56ch;
+        margin: 0;
+        color: #4b5565;
+        font-size: 1.125rem;
+        line-height: 1.6;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          background: #101218;
+          color: #f5f7fb;
+        }
+
+        p {
+          color: #bac2d0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>PocketGPT</h1>
+      <p>A public GitHub Pages site for PocketGPT.</p>
+    </main>
+  </body>
+</html>
