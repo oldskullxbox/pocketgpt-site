@@ -1,64 +1,43 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PocketGPT</title>
-    <style>
-      :root {
-        color-scheme: light dark;
-        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        background: #f6f7f9;
-        color: #14171f;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        min-height: 100vh;
-        margin: 0;
-        display: grid;
-        place-items: center;
-        padding: 32px;
-      }
-
-      main {
-        width: min(100%, 720px);
-      }
-
-      h1 {
-        margin: 0 0 16px;
-        font-size: clamp(2.5rem, 7vw, 5rem);
-        line-height: 0.95;
-        letter-spacing: 0;
-      }
-
-      p {
-        max-width: 56ch;
-        margin: 0;
-        color: #4b5565;
-        font-size: 1.125rem;
-        line-height: 1.6;
-      }
-
-      @media (prefers-color-scheme: dark) {
-        :root {
-          background: #101218;
-          color: #f5f7fb;
-        }
-
-        p {
-          color: #bac2d0;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <main>
-      <h1>PocketGPT</h1>
-      <p>A public GitHub Pages site for PocketGPT.</p>
-    </main>
-  </body>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PocketGPT</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6; color: #1a1a1a; background: #fafafa;
+    margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+  }
+  .card { max-width: 560px; padding: 40px 24px; text-align: center; }
+  h1 { font-size: 2.2rem; margin: 0 0 8px; }
+  p { font-size: 1.05rem; color: #444; margin: 0 0 28px; }
+  .links { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  a.btn {
+    display: inline-block; padding: 12px 22px; border-radius: 10px;
+    background: #1d6fe0; color: #fff; text-decoration: none; font-weight: 600;
+  }
+  a.btn.secondary { background: transparent; color: #1d6fe0; border: 1px solid #1d6fe0; }
+  footer { margin-top: 36px; color: #777; font-size: 0.9rem; }
+  footer a { color: inherit; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e6e6e6; background: #121212; }
+    p { color: #b0b0b0; }
+    footer { color: #8a8a8a; }
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>PocketGPT</h1>
+  <p>Local, offline AI chat for iPhone. Your data stays on your device.</p>
+  <div class="links">
+    <a class="btn" href="privacy.html">Privacy Policy</a>
+    <a class="btn secondary" href="support.html">Support</a>
+  </div>
+  <footer>© 2026 PocketGPT — Valeriy Volchetskiy · <a href="mailto:theloop.studio.office@gmail.com">theloop.studio.office@gmail.com</a></footer>
+</div>
+</body>
 </html>
